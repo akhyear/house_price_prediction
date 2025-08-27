@@ -1,0 +1,25 @@
+
+1. Top 10 features correlated with target:
+
+OverallQual           0.790982
+GrLivArea_capped      0.710211
+GarageCars            0.640409
+TotalBsmtSF_capped    0.638563
+GarageArea_capped     0.630854
+1stFlrSF_capped       0.620184
+FullBath              0.560664
+TotRmsAbvGrd          0.533723
+YearBuilt             0.522897
+YearRemodAdd          0.507101
+
+2. Bottom 10 features correlated with target:
+MSSubClass      0.084284
+OverallCond     0.077856
+MoSold          0.046432
+3SsnPorch       0.044584
+YrSold          0.028923
+LowQualFinSF    0.025606
+Id              0.021917
+MiscVal         0.021190
+BsmtHalfBath    0.016844
+BsmtFinSF2      0.011378
