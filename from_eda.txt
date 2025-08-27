@@ -53,3 +53,23 @@ YearBuilt <-> GarageYrBlt_NoNull: 0.700 == Will do feature constraction
 TotRmsAbvGrd <-> GrLivArea_capped: 0.837 == Droped TotRmsAbvGrd
 GarageCars <-> GarageArea_capped: 0.891 == Droped GarageArea_capped
 TotalBsmtSF_capped <-> 1stFlrSF_capped: 0.804 == Will do feature constraction
+
+5. Candidate to Remove (Low Variance / Almost Constant):
+
+KitchenAbvGr (almost always 1) == Droped
+BsmtHalfBath (almost always 0) == Droped
+3SsnPorch (mostly 0) == Droped
+MiscVal (mostly 0, very high kurtosis 698) == Droped
+LowQualFinSF (mostly 0, kurtosis 82) == Droped
+df = df.drop(columns=['LowQualFinSF', 'MiscVal', '3SsnPorch', 'BsmtHalfBath', 'KitchenAbvGr'])
+6. Candidate to Combine / Check Correlation:
+
+TotalBsmtSF_capped vs (BsmtFinSF1, BsmtFinSF2, BsmtUnfSF)
+
+GrLivArea_capped vs (1stFlrSF_capped, 2ndFlrSF)
+
+7. Keep but Transform (because of skewness):
+
+LotArea_capped (skew 2.25, log transform helps)
+SalePrice (skew 1.88, log transform often used)
+WoodDeckSF, OpenPorchSF, ScreenPorch (right-skewed, log+1 transform helps if
