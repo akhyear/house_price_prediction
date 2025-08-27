@@ -23,3 +23,26 @@ Id              0.021917
 MiscVal         0.021190
 BsmtHalfBath    0.016844
 BsmtFinSF2      0.011378
+
+3. Top 20 features by F-score:
+               feature        score
+0          OverallQual  2436.770591
+1     GrLivArea_capped  1483.888284
+2           GarageCars  1013.705666
+3   TotalBsmtSF_capped  1003.849017
+4      1stFlrSF_capped   911.301466
+5             FullBath   668.430296
+6         TotRmsAbvGrd   580.762801
+7            YearBuilt   548.665821
+8         YearRemodAdd   504.714855
+9    MasVnrArea_NoNull   419.328468
+10          Fireplaces   406.503866
+11  GarageYrBlt_NoNull   274.059167
+12      LotArea_capped   265.364372
+13          BsmtFinSF1   255.923517
+14  LotFrontage_capped   221.660315
+15          WoodDeckSF   171.494673
+16            2ndFlrSF   165.561151
+17         OpenPorchSF   161.577391
+18            HalfBath   128.018964
+19        BsmtFullBath    79.300912
