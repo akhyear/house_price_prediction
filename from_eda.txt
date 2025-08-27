@@ -46,3 +46,10 @@ BsmtFinSF2      0.011378
 17         OpenPorchSF   161.577391
 18            HalfBath   128.018964
 19        BsmtFullBath    79.300912
+
+4. Feature-to-feature correlations (excluding target):
+
+YearBuilt <-> GarageYrBlt_NoNull: 0.700 == Will do feature constraction 
+TotRmsAbvGrd <-> GrLivArea_capped: 0.837 == Droped TotRmsAbvGrd
+GarageCars <-> GarageArea_capped: 0.891 == Droped GarageArea_capped
+TotalBsmtSF_capped <-> 1stFlrSF_capped: 0.804 == Will do feature constraction
