@@ -1,5 +1,9 @@
 numpy
 pandas
 seaborn
+scipy
 matplotlib
 scikit-learn
+ydata-profiling
+tensorflow
+streamlit
