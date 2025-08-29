@@ -61,7 +61,7 @@ BsmtHalfBath (almost always 0) == Droped
 3SsnPorch (mostly 0) == Droped
 MiscVal (mostly 0, very high kurtosis 698) == Droped
 LowQualFinSF (mostly 0, kurtosis 82) == Droped
-df = df.drop(columns=['LowQualFinSF', 'MiscVal', '3SsnPorch', 'BsmtHalfBath', 'KitchenAbvGr'])
+
 6. Candidate to Combine / Check Correlation:
 
 TotalBsmtSF_capped vs (BsmtFinSF1, BsmtFinSF2, BsmtUnfSF)
