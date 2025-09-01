@@ -73,3 +73,17 @@ GrLivArea_capped vs (1stFlrSF_capped, 2ndFlrSF)
 LotArea_capped (skew 2.25, log transform helps)
 SalePrice (skew 1.88, log transform often used)
 WoodDeckSF, OpenPorchSF, ScreenPorch (right-skewed, log+1 transform helps if
+
+8. BsmtHalfBath, BsmtFullBath, HalfBath, KitchenAbvGr = can have binary
+
+9. ANOVA F-test i keeping this and dropping other 
+from ExterQual            0.327488
+BsmtFinType1         0.085605
+GarageType_NoNull    0.071542
+KitchenQual          0.069567
+BsmtQual             0.067325
+Neighborhood         0.065428
+FireplaceQu          0.035992
+BsmtExposure         0.027297
+HouseStyle           0.019634
+Exterior2nd          0.019147
