@@ -8,3 +8,4 @@ ydata-profiling
 tensorflow
 streamlit
 streamlit-drawable-canvas
+-e .
