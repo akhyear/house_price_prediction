@@ -4,8 +4,6 @@ seaborn
 scipy
 matplotlib
 scikit-learn
-ydata-profiling
 tensorflow
 streamlit
 streamlit-drawable-canvas
--e .
