@@ -38,3 +38,9 @@ PavedDrive: F=1.0011, p=0.4943
 SaleType: F=0.7709, p=0.9991
 SaleCondition: F=0.8738, p=0.9481
 GarageType_NoNull: F=1.6827, p=0.0000
+
+dropped 20 column
+
+2. ignificant numerical features correlated with target: ['OverallQual', 'GrLivArea_capped', 'GarageCars', 'TotalBsmtSF_capped', 'GarageArea_capped', '1stFlrSF_capped', 'FullBath', 'TotRmsAbvGrd', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea_NoNull', 'Fireplaces', 'LotArea_capped', 'GarageYrBlt_NoNull', 'LotFrontage_capped', 'BsmtFinSF1', 'WoodDeckSF', '2ndFlrSF', 'OpenPorchSF', 'HalfBath', 'BsmtFullBath', 'BsmtUnfSF', 'BedroomAbvGr', 'EnclosedPorch', 'KitchenAbvGr', 'ScreenPorch', 'MSSubClass', 'OverallCond']
+
+dropped 8 column
