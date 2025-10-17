@@ -8,7 +8,7 @@
 - "Foundation" it should be useful feature
 - "Neighborhood" definetly important feature
 - "BsmtQual" typical and good are around 80%+ 
-- "BsmtExposure" it have around 65% no exposure. I should drop it
+- "BsmtExposure" it have around 65% no exposure. I should drop it. and droped
 - "BsmtFinType1" and "BsmtQual" are samething in data I'm droping BsmtFinType1
 - "Heating" more than 90% are  GasA(Gas forced warm air furnace) I'm droping it
 - "HeatingQC" have Exilent around 50% average 30% good around 15%. It might be a important feature
