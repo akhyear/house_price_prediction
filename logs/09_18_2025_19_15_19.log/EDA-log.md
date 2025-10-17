@@ -10,3 +10,10 @@
 - "BsmtQual" typical and good are around 80%+ 
 - "BsmtExposure" it have around 65% no exposure. I should drop it
 - "BsmtFinType1" and "BsmtQual" are samething in data I'm droping BsmtFinType1
+- "Heating" more than 90% are  GasA(Gas forced warm air furnace) I'm droping it
+- "HeatingQC" have Exilent around 50% average 30% good around 15%. It might be a important feature
+- "CentralAir" around 90% have it so I'm droping it
+- "KitchenQual" have skew data I'm gonna need it I think
+- "FireplaceQu" two valu dominates (average and good)
+- "GarageFinish" around 40% is unfinished, roughly fisnished and and finiched around 28% and 25%
+- "GarageFinish" attached around 60% and rest value count is half the size of it
