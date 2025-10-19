@@ -77,3 +77,20 @@ axes[1].set_title('Log-Transformed Distribution')
 plt.tight_layout()
 plt.show()  # Or plt.savefig('transformation.png') to save '''
 ```
+
+# Feature 10 = YearRemodAdd
+- Summary: Remodel date (same as construction date if no remodeling or additions)
+- Visual finding: not much. This distribution is not a helpful
+
+# Feature 11 = MasVnrArea_NoNull
+- Summary: Masonry veneer is a thin layer of brick, stone, or manufactured material that's applied to the exterior of a building. Unlike traditional masonry, which is structural and bears weight, masonry veneer is decorative and non-load-bearing. Think of it as a stylish jacket for your commercial building. 
+- Visual finding: Have so many zero value.
+- Possible cause: most of the house have not it.
+- Decision / Action: I'm gonna create MasVnrArea_Binary neew column inshAllah.
+will Keep BOTH columns initially. Test correlation of both with your target. Use feature importance to decide which performs better.
+  
+- Next-step code: 
+```python
+  X_train['MasVnrArea_Binary'] = (X_train['MasVnrArea_NoNull'] > 0).astype(int)
+  ```
+- Logged on: 
