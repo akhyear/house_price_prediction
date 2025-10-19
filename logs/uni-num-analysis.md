@@ -19,10 +19,10 @@ data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])
 # Feature 2 = GrLivArea_capped
 - Summury = It have nice not much but ok normal distrubution
 
-# Feature 3, 4, 8= TotalBsmtSF_capped , GarageArea_capped, 
+# Feature 3, 4, 5, 6= TotalBsmtSF_capped , GarageArea_capped, LotFrontage_capped, 1stFlrSF_capped
 - summury = it has ok norlam distibution
 
-# Feature 5 = YearBuilt 
+# Feature 7 = YearBuilt 
 - Summary: Original construction date. from 1880 to 2000.
 - Visual finding: It is right skew data.
 - Possible cause: Early years (1880–1920) show very low counts (near zero to ~20), indicating few older structures in the dataset—possibly due to urban development patterns, data collection biases (e.g., focusing on modern housing markets), or historical events like fires/wars destroying older builds.
@@ -55,7 +55,7 @@ plt.show()  # Or plt.savefig('transformation.png') to save '''
 
 
 
-# Feature6 = 2ndFlrSF
+# Feature 8 = 2ndFlrSF
 - Summary: Second floor square feet
 - Visual finding: most of the value is Zero
 - Possible cause: maybe those house have not second floor
@@ -66,14 +66,14 @@ plt.show()  # Or plt.savefig('transformation.png') to save '''
   X_train['2ndFlrSF_Binary'] = (X_train['2ndFlrSF'] > 0).astype(int)
   ```
 
-# Feature 7 = BsmtFinType1
+# Feature 9 = BsmtFinType1
 - Summary: Type 1 finished square feet
 - Visual finding: high spike at zero and I think it is left skewed
 - Possible cause: many houses might have not basement
 - Decision / Action: I'm gonna check weather it is skewed or not if yes then gonna aplly log_transformation. also gonna do bivariate analysis
 - Next-step code: same as feature 5
 
-# Feature 9 = LotArea
+# Feature 10 = LotArea
 - Summary: Lot size in square feet
 - Visual Finding: Normal distribution at right side but it have log tail at left.
 - Possible cause : 
