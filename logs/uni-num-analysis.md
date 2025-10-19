@@ -15,3 +15,6 @@ encoder = OrdinalEncoder(categories=[sorted(data['GarageCars'].unique())])  # En
 data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])```
 
 - Logged on: 19 October, 2025
+
+# Feature = GrLivArea
+- Summury = It have nice not much but ok normal distrubution
