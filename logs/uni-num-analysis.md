@@ -1,4 +1,4 @@
-# Feature = OverallQual
+# Feature1 = OverallQual
 - Summary: It has spike at specific integer that is 1 to 10. 1 means very poor and 10 means very exilent. so it is oridinal by nature
 - Visual finding: average are lies between 4 to 8. have 2 peaks.
 - Possible cause: It common for most house quality is avarege.
@@ -16,5 +16,15 @@ data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])```
 
 - Logged on: 19 October, 2025
 
-# Feature = GrLivArea
+# Feature2 = GrLivArea
 - Summury = It have nice not much but ok normal distrubution
+
+# Feature3 = GarageCars
+- Summury = It has spike at specific integer. 
+- Visual Finding = the spike at 0 to 4. highest value in 2
+- Decision = I gonna scatterplot it with saleprice and see if it linear or not. 
+- Next-step code : 
+``` plt.scatter(X_train['GarageCars'], y_train, alpha=0.6, edgecolors='k', linewidth=0.5)```
+
+# Feature4 = TotalBsmtSF_capped
+summury = it has ok norlam distibution
