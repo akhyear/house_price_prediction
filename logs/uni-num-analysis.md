@@ -19,7 +19,7 @@ data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])
 # Feature 2 = GrLivArea_capped
 - Summury = It have nice not much but ok normal distrubution
 
-# Feature 3, 4 = TotalBsmtSF_capped , GarageArea_capped
+# Feature 3, 4, 8= TotalBsmtSF_capped , GarageArea_capped, 
 - summury = it has ok norlam distibution
 
 # Feature 5 = YearBuilt 
@@ -65,3 +65,21 @@ plt.show()  # Or plt.savefig('transformation.png') to save '''
 ```python
   X_train['2ndFlrSF_Binary'] = (X_train['2ndFlrSF'] > 0).astype(int)
   ```
+
+# Feature 7 = BsmtFinType1
+- Summary: Type 1 finished square feet
+- Visual finding: high spike at zero and I think it is left skewed
+- Possible cause: many houses might have not basement
+- Decision / Action: I'm gonna check weather it is skewed or not if yes then gonna aplly log_transformation. also gonna do bivariate analysis
+- Next-step code: same as feature 5
+
+# Feature 9 = LotArea
+- Summary: Lot size in square feet
+- Visual Finding: Normal distribution at right side but it have log tail at left.
+- Possible cause : 
+- Next-step code:
+  ```Python
+  X_train["LotArea_capped"].skew()
+  X_train['LotArea_log'] = np.log1p(X_train['LotArea_capped'])
+  sns.histplot(data=X_train, x = 'LotArea_log', kde = True)
+  X_train["LotArea_log"].skew()
