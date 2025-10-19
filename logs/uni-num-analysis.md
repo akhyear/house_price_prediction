@@ -29,9 +29,16 @@ data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])```
 # Feature4,5,6 = TotalBsmtSF_capped , GarageArea,  1stFlrSF
 - summury = it has ok norlam distibution
 
-# Feature = FullBath
+# Feature7 = FullBath
 - Summary: It has spike at specific integer.
 - Visual finding: Have value from 0 to 3. 90% at 1 and 2
 - Possible cause: It's natural
 - Decision / Action: gonna leave it as it be. It means I'm gonna treat as integer
 - Next-step code: Nothing
+
+# Feature8 = TotRmsAbvGrd
+- Summary: it also has spike at specific integers
+- Visual finding: value is from 2 to 14.
+- Possible cause: 
+- Decision / Action: first I need to handle outlier and do oridical encoding 
+- Next-step code: 
