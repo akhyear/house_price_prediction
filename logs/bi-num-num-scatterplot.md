@@ -9,3 +9,17 @@ data['OverallQual_encoded'] = data['OverallQual'].astype('category')  # Ensures 
 encoder = OrdinalEncoder(categories=[sorted(data['OverallQual'].unique())])  # Enforce order
 data['OverallQual_encoded'] = encoder.fit_transform(data[['OverallQual']])
 ```
+
+# GrLivArea_capped - SalePrice
+- Summary:
+- Visual finding: IT HAS CONE DISTRIBUTION
+- Possible cause: 
+- Decision / Action: GONNA TRANSFORM Y
+
+- Next-step code: 
+```python
+y_log = np.log1p(y_train)
+y_log_flattern = y_log.flatten() if hasattr(y_log, 'flatten') else np.ravel(y_log)
+# for training
+y_pred_real = np.expm1(y_pred_log)
+```
