@@ -3,17 +3,16 @@
 - Visual finding: average are lies between 4 to 8. have 2 peaks.
 - Possible cause: It common for most house quality is avarege.
 - Decision / Action: I'm gonna do oridinal encoding.
-
 - Next-step code: 
 
 ```python 
 from sklearn.preprocessing import OrdinalEncoder
 
 # Define order (integers already ordered, but encode explicitly)
-data['GarageCars_ord'] = data['GarageCars'].astype('category')  # Ensures order
+data['OverallQual_encoded'] = data['OverallQual'].astype('category')  # Ensures order
 
-encoder = OrdinalEncoder(categories=[sorted(data['GarageCars'].unique())])  # Enforce order
-data['GarageCars_encoded'] = encoder.fit_transform(data[['GarageCars']])
+encoder = OrdinalEncoder(categories=[sorted(data['OverallQual'].unique())])  # Enforce order
+data['OverallQual_encoded'] = encoder.fit_transform(data[['OverallQual']])
 ```
 
 # Feature 2 = GrLivArea_capped
