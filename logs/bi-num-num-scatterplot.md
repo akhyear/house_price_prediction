@@ -10,7 +10,7 @@ encoder = OrdinalEncoder(categories=[sorted(data['OverallQual'].unique())])  # E
 data['OverallQual_encoded'] = encoder.fit_transform(data[['OverallQual']])
 ```
 
-# GrLivArea_capped, TotalBsmtSF_capped- SalePrice
+# GrLivArea_capped , TotalBsmtSF_capped , 1stFlrSF_capped- SalePrice
 - Summary:
 - Visual finding: IT HAS CONE DISTRIBUTION
 - Possible cause: 
