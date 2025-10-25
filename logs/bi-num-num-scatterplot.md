@@ -39,3 +39,9 @@ df['Has2ndFloor'] = (df['2ndFlrSF'] > 0).astype(int)
 df['2ndFlrSF_log'] = df['2ndFlrSF'].apply(lambda x: np.log1p(x) if x > 0 else 0)
 ```
 - Option 2: Keep original as-is . The 56% zeros is actually meaningful, most houses are single-story. Tree-based models (Random Forest, XGBoost, LightGBM) handle this naturally
+
+
+# BsmtFinSF1 - SalePrice
+- Visual finding: Percantage of zero 31.93, The total value is 1168.
+- Decision / Action: Not gonna do anything. Random forest will handle it
+
