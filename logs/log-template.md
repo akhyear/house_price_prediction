@@ -1,4 +1,4 @@
-# Template
+# 
 - Summary:
 - Visual finding:
 - Possible cause: 
